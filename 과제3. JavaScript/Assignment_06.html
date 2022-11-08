@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- button을 click할 때 첫번째 paragraph의 background는 red로, 
+    두번째 paragraph의 background는 yellow로 변경하는 함수 set_background()를 구현하시오 -->
+    <input type="button" value="background color change" onclick="set_background()">
+    <p id="1st">1st paragraph</p>
+    <p id="2nd">2nd paragraph</p>
+
+    <script>
+        function set_background() {
+            // coding을 할 것
+
+            let col1 = document.getElementById("1st");
+            let col2 = document.getElementById("2nd");
+            col1.style.backgroundColor = 'red';
+            col2.style.backgroundColor = 'yellow';
+
+        }
+    </script>
+</body>
+</html>
